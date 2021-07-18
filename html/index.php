@@ -64,7 +64,6 @@ require 'config.php';
 </html>
 <?php
 if (isset($_REQUEST['btn_registration'])) {
-    echo "<h1> YEH BABY</h1>";
 }
 
 ?>
