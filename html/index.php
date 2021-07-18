@@ -1,7 +1,6 @@
 <?php
 include './config.php';
 require 'config.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -21,35 +20,41 @@ require 'config.php';
 
 <body>
     <div class="container">
-        <form class="containerform" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <form class="containerform" method="post">
             <div class="form-group row">
+                <label class="col-sm-3 control-label">TEXT TEXT</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="inputFullname" placeholder="Full Name" required>
                 </div>
             </div>
             <div class="form-group row">
+                <label class="col-sm-3 control-label">TEXT TEXT</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="inputUsername" placeholder="User Name" required>
                 </div>
             </div>
             <div class="form-group row">
+                <label class="col-sm-3 control-label">TEXT TEXT</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="inputEmail" placeholder="Email Address" required>
                 </div>
             </div>
             <div class="form-group row">
+                <label class="col-sm-3 control-label">TEXT TEXT</label>
                 <div class="col-sm-10">
                     <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
                 </div>
             </div>
             <div class="form-group row">
+                <label class="col-sm-3 control-label">TEXT TEXT</label>
                 <div class="col-sm-10">
                     <input type="password" class="form-control" id="inputPasswordconf" placeholder="Password confe" required>
                 </div>
             </div>
             <div class="form-group row">
+                <label class="col-sm-3 control-label">TEXT TEXT</label>
                 <div class="col-sm-10 offset-sm-2">
-                    <button type="submit" name="btn_regestration" class="btn btn-primary">Sign Up</button>
+                    <button type="submit" name="btn_registration" class="btn btn-primary">Sign Up</button>
                 </div>
             </div>
         </form>
@@ -57,3 +62,9 @@ require 'config.php';
 </body>
 
 </html>
+<?php
+if (isset($_REQUEST['btn_registration'])) {
+    echo "<h1> YEH BABY</h1>";
+}
+
+?>
